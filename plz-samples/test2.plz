@@ -1,0 +1,29 @@
+
+/* kommentar */
+
+COMMON
+DECLARE (c) FLOAT;
+END
+prog1 : PROC (MAIN)
+CONST (x=5);
+DECLARE (a, b) FIXED;
+DO
+a = 3;
+b = -5;
+c = -3.5E+1;
+DO WHILE b LT 100
+c =c + a * s + x;
+b = b + 10;
+PUT SKIP LIST (a);
+END prog1;
+
+
+
+
+
+
+
+
+
+
+

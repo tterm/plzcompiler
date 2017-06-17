@@ -1,0 +1,20 @@
+/* neues Programm */
+PROTO groesser : PROC (IN (a,b) POINTER TO FIXED ; OUT(c)POINTER TO FIXED); END
+COMMON
+DECLARE (zahla,zahlb,zahlc) POINTER TO FIXED;
+END
+
+/* Funktion zum finden der groessten zweier Zahlen */
+groesser : PROC (IN (a,b) POINTER TO FIXED ; OUT (c)POINTER TO FIXED);
+DO
+IF a GT b THEN c = a ELSE c = b END;
+END  groesser;
+
+
+prog1 : PROC (MAIN);
+DO
+groesser (a,b,c);
+PUT LIST(c);
+PUT LIST (a AND b);
+END prog1;
+

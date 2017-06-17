@@ -1,0 +1,13 @@
+prog1 : PROC ( MAIN ) ; 
+CONST ( x = 5 ) ; ( z =10 ) ;
+DECLARE ( a , b ) FIXED ; ( c , d ) FLOAT ;
+DO
+a = 3;
+b = -5;
+c = -3.5E+1 ;
+DO WHILE b LT 100
+c =c + a * s + x ;
+PUT LIST ( a ); PUT SKIP ;
+END ;
+END prog1  ;
+

@@ -1,0 +1,18 @@
+COMMON
+DECLARE ( thomas ) FIXED ;
+END
+
+prog1 : PROC ( MAIN ) ; 
+DECLARE ( a , b ) FIXED ; ( tt ) FLOAT ;
+DO
+thomas =4;
+a = 3;
+b = -5;
+tt = -3.5E+3 ;
+a = ( 5 + 3 ) * 4 - 8  / 9 ;
+IF a GT 0 THEN a = a - 1 END ;
+PUT LIST ( a , thomas );
+END prog1  ;
+
+
+

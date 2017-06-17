@@ -1,0 +1,24 @@
+PROTO
+tt : PROC ( IN ( a ) FIXED ; OUT ( alex , petra ) FLOAT ) ;
+END
+
+COMMON
+DECLARE ( thomas ) FIXED ;
+END
+
+prog1 : PROC ( MAIN ) ; 
+DECLARE ( a , b ) FIXED ;
+DO
+thomas=5;
+tt ( thomas , a , b ) ;
+PUT LIST ( thomas , a, b ) ;
+END prog1  ;
+
+tt: PROC ( IN ( a ) FIXED ; OUT ( alex , petra ) FLOAT ) ;
+DO
+alex = 1976 ;
+petra = 1978 ;
+PUT LIST ( a ) ;
+PUT SKIP;
+a = 22 ;
+END tt;

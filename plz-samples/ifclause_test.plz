@@ -1,0 +1,19 @@
+
+PROTO 
+fak : PROC ( IN ( ein ) FIXED ; );
+END
+
+prog1 : PROC ( MAIN ) ;
+DECLARE ( a ) FIXED ;
+DO
+a = 5 ;
+fak ( a ) ;
+END prog1;
+
+fak : PROC ( IN ( ein ) FIXED ; ) ;
+DO
+IF ( ein GT 1 ) THEN ein  = ein - 1 ; 
+fak ( ein ) ;
+PUT LIST ( ein ) ;
+END ;
+END fak ;

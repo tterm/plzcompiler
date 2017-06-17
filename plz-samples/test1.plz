@@ -1,0 +1,53 @@
+
+PROTO
+tt : PROC ( IN ( a , b , c ) FLOAT ; OUT ( d , e , f ) FIXED ) ; 
+ttt : PROC ( ; OUT ( tx , tf , tz ) FIXED ) ;
+zzz :  PROC ( ; ) ; 
+END
+
+COMMON
+CONST ( a = 50 ) ; ( hall = 3.5E+1 ) ; ( ha = 5 ) ; ( b = 33 ) ;
+DECLARE ( marc , morris , mac , doreen ) POINTER TO FIXED ; ( ma ) FLOAT ; 
+END
+
+prog2 : PROC ( ; OUT ( ttt ) FIXED ) ;
+DO
+a = 3 ;
+b = - 5 ;
+
+END prog2 ;
+
+prog1 : PROC (MAIN ) ;
+CONST ( hallo = 50 ) ; ( z = 100) ;
+DECLARE ( a , d , c , e ) FIXED ;
+
+
+
+DO
+marc ^  =  tt + doreen - thomas + morris - doreen * thomas / thomas 
+morris = tt + tt
+IF tt NE -tt THEN zzz = zzz + yyy - 23 ELSEIF tt LT -tt THEN zzz = 100 END;
+DO WHILE xxx NE tzt xxx = x + 50 END;
+PUT TEXT ( "Hallothomas"  );
+GET LIST ( a , b );
+PUT SKIP;
+PUT TEXT ( "ttt" );
+PUT LIST ( c , d , e );
+IF tt LT -tt THEN tzr = trt + 25 ELSEIF tt EQ -tt THEN ztr = 1000 ELSEIF tt EQ tt THEN rew = 1000 ELSE tz = 33 + 44 END;
+tt ( a , b , c );
+IF tt LT tt THEN ttt ( tx , tf ,tz ) ; x = 35 ; y=z; END;
+IF tt LT -tt THEN prog3 (  ) END ;
+NEW ttt;
+NEW tt ;
+DO ttt= tt + 20 / 30 UNTIL 50 ; 
+DISPOSE xxx
+DO WHILE 50 EQ 30 xxx = tz *23 END ;
+tzr ( c , f , g ) ;
+PUT TEXT ( "e" ) ;
+END prog1 ; 
+
+prog3 : PROC ( ; OUT ( tt ) FLOAT ) ;
+DO 
+b = 20 ;
+END prog3 ;
+
