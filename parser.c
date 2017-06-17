@@ -519,7 +519,7 @@ void ifstatement() {
         jpc_anlegen(ifname);
         getSymbol();
         statementseq();
-        //if_clause_anlegen(ifname);
+        /*if_clause_anlegen(ifname);*/
 
 
         if (symbol == ELSEIF) {

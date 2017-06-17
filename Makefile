@@ -3,9 +3,9 @@ all: scanner parser interpreter
 
 clean:
 	rm -f *.o
-	rm plz-samples/*.tok
-	rm plz-samples/*.lst
-	rm plz-samples/*.cod
+	rm -f plz-samples/*.tok
+	rm -f plz-samples/*.lst
+	rm -f plz-samples/*.cod
 cleanall:
 	rm -f scanner
 	rm -f parser

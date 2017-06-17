@@ -390,7 +390,7 @@ int getsym() {
         symbol = minus;
 
     } else if (c == '*') {
-        c = lese_Zeichen(c);
+        c = lese_Zeichen();
 
         if (c == '/') {
             cnt_kommentar--;
@@ -407,7 +407,7 @@ int getsym() {
 
     } else if (c == '/') {
 
-        c = lese_Zeichen(c);
+        c = lese_Zeichen();
         if (c == '*') {
             cnt_kommentar++;
             ist_kommentar = 1;
@@ -474,7 +474,7 @@ int getsym() {
                         fprintf(token, "%s ", strings);
                         printf("Maximale Stringlaenge in Zeile %d ueberschritten!\n", linenr);
                         do {
-                            c = lese_Zeichen(c);
+                            c = lese_Zeichen();
 
                         } while (c == ';' || c == '.' || c == '"');
                         return (0);

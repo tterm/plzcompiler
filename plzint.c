@@ -90,7 +90,7 @@ int popInt();
 
 float popFloat();
 
-int trunc(float val) {
+int truncToInt(float val) {
     return val;
 }
 
@@ -113,7 +113,7 @@ int char2int(char *dat) {
 float char2float(char *dat) {
     float ret;
     ret = atof(dat);
-    /*ret=trunc(ret*1000)/1000;*/
+    /*ret=truncToInt(ret*1000)/1000;*/
     return ret;
 }
 
@@ -142,7 +142,7 @@ float popFloat() {
     tmp = stack[sptr].l;
     if (tmp < 0)tmp = 0;
     if (tmp != 0) {
-        while (trunc(tmp) != 0) {
+        while (truncToInt(tmp) != 0) {
             tmp = tmp / 10;
         }
     }
@@ -161,17 +161,17 @@ void pushInt(int dat) {
 }
 
 void pushIntF(float dat) {
-    pushInt(trunc(dat));
+    pushInt(truncToInt(dat));
 }
 
 void pushFloat(float dat) {
     float tmp;
     /*fprintf(stdout, "dat %3f", dat);*/
-    stack[sptr].h = trunc(dat);
-    tmp = dat - trunc(dat);
+    stack[sptr].h = truncToInt(dat);
+    tmp = dat - truncToInt(dat);
     /*fprintf(stdout, "dat %3f, tmp %3f", dat, tmp);*/
     if (tmp != 0) {
-        while (tmp != trunc(tmp)) {
+        while (tmp != truncToInt(tmp)) {
             tmp = tmp * 10;
             /*fprintf(stdout, "-tmp %3f", tmp);*/
         }

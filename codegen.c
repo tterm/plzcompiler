@@ -228,7 +228,7 @@ void const_anlegen(char *const_name, char *functionname, int scope, int type, ch
     char res[20];
     if (scope == 0) {
         result = reservieren_am_stack();
-    } else if (scope == 1) {
+    } else {
         result = local_reservieren_am_stack();
     }
     sprintf(res, "%d", result);
